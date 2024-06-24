@@ -9,8 +9,13 @@ public class GenericMethodDemo {
 	obj.display(true);
 	obj.display(45.60);
 	
-	PalindromeClass intobj = new PalindromeClass();
-	intobj.checkPalindrome("Hello");
-	}
+	
+	System.out.println("is 10 Palindrome ?: "+ obj.checkPalindrome(10));
+	System.out.println("is 101 Palindrome ?: "+ obj.checkPalindrome(101));
+	System.out.println("is CAR Palindrome ?: "+obj.checkPalindrome("CAR"));
+	System.out.println("is RACECAR Palindrome ?: "+obj.checkPalindrome("RACECAR"));
+	 obj.checkPalindrome(10.67);
+	
+}
 
 }
