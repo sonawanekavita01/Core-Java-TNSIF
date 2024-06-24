@@ -1,10 +1,10 @@
 package com.tnsif.daySix.SingleInheritance;
 
 public class Person {
-	private String name;
+	protected String name;
 	private int age;
 
-	public Person() {
+	public Person(String string, String string2) {
 		super();
 	}
 
@@ -13,6 +13,8 @@ public class Person {
 		this.name = name;
 		this.age = age;
 	}
+
+
 
 	@Override
 	public String toString() {

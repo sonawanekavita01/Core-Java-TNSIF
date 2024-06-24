@@ -1,0 +1,1 @@
+package com.tnsif.dayEighteen.userdefinedfunctionalinterfaces;

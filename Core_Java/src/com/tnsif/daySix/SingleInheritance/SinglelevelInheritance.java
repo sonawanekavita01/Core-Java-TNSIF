@@ -4,7 +4,7 @@ public class SinglelevelInheritance {
 	
 
 		public static void main(String[] args) {
-			Person p1 = new Person();
+			Person p1 = new Person(null, 0);
 			// System.out.println(p1.toString());
 			System.out.println(p1); // calling toString() method
 

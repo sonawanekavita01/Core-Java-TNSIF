@@ -7,7 +7,7 @@ public class Student extends Person {
 	private int rno;
 
 	public Student() {
-		super();
+		super(name, rno);
 
 	}
 
