@@ -20,18 +20,48 @@ public void testFactorial() {
 
 @Test
 public void testFactorialForNegativeNumbers() {
-	System.out.println("Factorial testing");
-	long expected=1;
+	System.out.println("Factorial fot Negative testing");
+	long expected=-1;
 	long actual =Operations.getFactorial(-2);
 	Assertions.assertEquals(expected,actual);
 }
 @Test
 public void testFactorialForZero() {
-	System.out.println("Factorial testing");
+	System.out.println("Factorial  for Zero testing");
 	long expected=1;
 	long actual =Operations.getFactorial(0);
 	Assertions.assertEquals(expected,actual);
 }
+@Test
+public void testForPrime() {
+	System.out.println("Prime Number  testing");
+	Assertions.assertTrue(Operations.isprime(5));
+}
+@Test
+public void testForNonPrime() {
+	System.out.println(" Non-Prime Number  testing");
+	Assertions.assertFalse(Operations.isprime(9));
+}
+@Test
+public void testForNumberPalindrome() {
+	System.out.println(" Palindrome Number  testing");
+	Assertions.assertTrue(Operations.ispalindrome(12321));
+}
+@Test
+public void testForNumberNonPalindrome() {
+	System.out.println(" Non-Palindrome Number  testing");
+	Assertions.assertFalse(Operations.ispalindrome(129));
+}
+@Test
+public void testForStringPalindrome() {
+	System.out.println("Palindrome String  testing");
+	Assertions.assertTrue(Operations.ispalindrome("MAM"));
+}
 
+@Test
+public void testForStringNonPalindrome() {
+	System.out.println(" Non-Palindrome String  testing");
+	Assertions.assertFalse(Operations.ispalindrome("CAR"));
+}
 
 }
